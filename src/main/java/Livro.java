@@ -20,8 +20,10 @@ public class Livro implements Cloneable {
     }
 
     @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Livro clone() throws CloneNotSupportedException {
+        Livro livroClone = (Livro) super.clone();
+        livroClone.editora = (Editora) livroClone.editora.clone();
+        return livroClone;
     }
 
     public int getCodigo() {
