@@ -26,19 +26,6 @@ public class Livro implements Cloneable {
         return livroClone;
     }
 
-    @Override
-    public String toString() {
-        return "Livro{" +
-                "codigo=" + codigo +
-                ", titulo='" + titulo +
-                ", descricao=" + descricao +
-                ", autora='" + autora +
-                ", anoPublicacao='" + anoPublicacao +
-                ", numeroPaginas='" + numeroPaginas +
-                ", editora='" + editora +
-                ", ISBN='" + ISBN +
-                '}';
-    }
     public int getCodigo() {
         return codigo;
     }

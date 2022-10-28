@@ -20,18 +20,6 @@ public class Editora implements Cloneable {
         return super.clone();
     }
 
-    @Override
-    public String toString() {
-        return "Editora{" +
-                "codigo=" + codigo +
-                ", nome='" + nome +
-                ", endereco=" + endereco +
-                ", cnpj='" + cnpj +
-                ", email='" + email +
-                ", telefone='" + telefone +
-                '}';
-    }
-
     public int getCodigo() {
         return codigo;
     }
@@ -79,4 +67,6 @@ public class Editora implements Cloneable {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+
+
 }
