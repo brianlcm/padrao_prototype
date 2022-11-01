@@ -1,22 +1,16 @@
 public class Livro implements Cloneable {
     private int codigo;
     private String titulo;
-    private String descricao;
     private String autora;
-    private String anoPublicacao;
     private String numeroPaginas;
     private Editora editora;
-    private String ISBN;
 
-    public Livro(int codigo, String titulo, String descricao, String autora, String anoPublicacao, String numeroPaginas, Editora editora, String ISBN) {
+    public Livro(int codigo, String titulo, String autora, String numeroPaginas, Editora editora) {
         this.codigo = codigo;
         this.titulo = titulo;
-        this.descricao = descricao;
         this.autora = autora;
-        this.anoPublicacao = anoPublicacao;
         this.numeroPaginas = numeroPaginas;
         this.editora = editora;
-        this.ISBN = ISBN;
     }
 
     @Override
@@ -29,77 +23,51 @@ public class Livro implements Cloneable {
     @Override
     public String toString() {
         return "Livro{" +
-                "codigo=" + codigo +
-                ", titulo='" + titulo +
-                ", descricao=" + descricao +
-                ", autora='" + autora +
-                ", anoPublicacao='" + anoPublicacao +
-                ", numeroPaginas='" + numeroPaginas +
-                ", editora='" + editora +
-                ", ISBN='" + ISBN +
+                "codigo='" + codigo +
+                "', titulo='" + titulo +
+                "', autora='" + autora +
+                "', numeroPaginas='" + numeroPaginas +
+                "', Editora=" + editora +
                 '}';
     }
+
     public int getCodigo() {
         return codigo;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public String getAutora() {
-        return autora;
-    }
-
-    public String getAnoPublicacao() {
-        return anoPublicacao;
-    }
-
-    public String getNumeroPaginas() {
-        return numeroPaginas;
-    }
-
-    public Editora getEditora() {
-        return editora;
-    }
-
-    public String getISBN() {
-        return ISBN;
     }
 
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
+    public String getTitulo() {
+        return titulo;
+    }
+
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public String getAutora() {
+        return autora;
     }
 
     public void setAutora(String autora) {
         this.autora = autora;
     }
 
-    public void setAnoPublicacao(String anoPublicacao) {
-        this.anoPublicacao = anoPublicacao;
+    public String getNumeroPaginas() {
+        return numeroPaginas;
     }
 
     public void setNumeroPaginas(String numeroPaginas) {
         this.numeroPaginas = numeroPaginas;
     }
 
-    public void setEditora(Editora editora) {
-        this.editora = editora;
+    public Editora getEditora() {
+        return editora;
     }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
+    public void setEditora(Editora editora) {
+        this.editora = editora;
     }
 }

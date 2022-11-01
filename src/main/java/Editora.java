@@ -2,17 +2,13 @@ public class Editora implements Cloneable {
     private int codigo;
     private String nome;
     private String endereco;
-    private String cnpj;
     private String email;
-    private String telefone;
 
-    public Editora(int codigo, String nome, String endereco, String cnpj, String email, String telefone) {
+    public Editora(int codigo, String nome, String endereco, String email) {
         this.codigo = codigo;
         this.nome = nome;
         this.endereco = endereco;
-        this.cnpj = cnpj;
         this.email = email;
-        this.telefone = telefone;
     }
 
     @Override
@@ -23,13 +19,10 @@ public class Editora implements Cloneable {
     @Override
     public String toString() {
         return "Editora{" +
-                "codigo=" + codigo +
-                ", nome='" + nome +
-                ", endereco=" + endereco +
-                ", cnpj='" + cnpj +
-                ", email='" + email +
-                ", telefone='" + telefone +
-                '}';
+                "codigo='" + codigo +
+                "', nome='" + nome +
+                "', endereco='" + endereco +
+                "', email='" + email + '\'' ;
     }
 
     public int getCodigo() {
@@ -56,27 +49,11 @@ public class Editora implements Cloneable {
         this.endereco = endereco;
     }
 
-    public String getCnpj() {
-        return cnpj;
-    }
-
-    public void setCnpj(String cnpj) {
-        this.cnpj = cnpj;
-    }
-
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
     }
 }
